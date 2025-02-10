@@ -99,7 +99,6 @@ def scrape_episodes():
         if link["href"].startswith("/wiki/Episode_"):
             ep_number, ep_title = extract_episode_info(link["href"])
             if ep_number is None or ep_number in existing_episodes:
-                print(f"Skipping Episode {ep_number} (already in database)")
                 continue
 
             episode_url = BASE_URL + link["href"]
