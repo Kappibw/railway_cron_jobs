@@ -1,0 +1,9 @@
+{
+    "build": {
+        "env": "python3.10",
+        "cmd": "pip install -r requirements.txt"
+    },
+    "deploy": {
+        "startCommand": "python scraper/scraper.py"
+    }
+}
